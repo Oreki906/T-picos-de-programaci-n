@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="layout.CrearContacto"
+             Title="Crear Contacto"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <Grid Padding="30">
+            <Frame BackgroundColor="White"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   Padding="25"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center">
+
+                <VerticalStackLayout Spacing="20">
+
+                    <Label Text="Crear Nuevo Contacto"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           TextColor="#333"
+                           HorizontalOptions="Center"/>
+
+                    <Entry x:Name="nombreEntry"
+                           Placeholder="Nombre"
+                           HeightRequest="50"
+                           BackgroundColor="#FAFAFA"
+                           Margin="0"
+                           TextColor="#000"
+                           PlaceholderColor="#999"
+                           FontSize="16"/>
+
+                    <Entry x:Name="telefonoEntry"
+                           Placeholder="Teléfono"
+                           Keyboard="Telephone"
+                           HeightRequest="50"
+                           BackgroundColor="#FAFAFA"
+                           TextColor="#000"
+                           PlaceholderColor="#999"
+                           FontSize="16"/>
+
+                    <Entry x:Name="correoEntry"
+                           Placeholder="Correo"
+                           Keyboard="Email"
+                           HeightRequest="50"
+                           BackgroundColor="#FAFAFA"
+                           TextColor="#000"
+                           PlaceholderColor="#999"
+                           FontSize="16"/>
+
+                    <Entry x:Name="direccionEntry"
+                           Placeholder="Dirección"
+                           HeightRequest="50"
+                           BackgroundColor="#FAFAFA"
+                           TextColor="#000"
+                           PlaceholderColor="#999"
+                           FontSize="16"/>
+
+                    <Button Text="Guardar Contacto"
+                            HeightRequest="50"
+                            CornerRadius="10"
+                            BackgroundColor="#4CAF50"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            Clicked="OnGuardarClicked"/>
+
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+    </ScrollView>
+</ContentPage>
